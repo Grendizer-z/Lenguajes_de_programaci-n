@@ -22,23 +22,149 @@
                 </ul>
             </section>
             <section class="Intro" id="Intro">
-                <h2>Introducción</h2> <p>Bienvenid@ al blog sobre lenguajes de programación. ¿Te interesan los sistemas morfosintacticos que permiten a los desarrolladores comunicarse 
-                con sus ordenadores, escribiendo secuencias de instrucciones expresadas formalmente mediante un metodo logico-simbolico? Entonces te encuentras en el lugar pertinente 
-                para aprender al respecto. ¿Sabias que la programación existe desde la antiguedad? Sí, cientos de años antes de la tecnologia electronica, existian metodos para lograr que 
-                los sistemas artificiales pudiesen realizar tareas medianamente complejas de forma automatica. Los filosofos griegos eran unos genios, pese al prejucio común de que 
-                simplemente eran unos charlatanes, la verdad es que ellos propusieron las bases del conocimiento cientifico actual, y entre sus grandes contribuciones, ademas del 
-                teorema de pitagoras por parte de los pitagoricos, fué la robotica o los automatas. Entre los primeros ingenieros en crear un automata con su respectivo lenguaje de 
-                programación fue Herón de alejandria <a href="https://historia.nationalgeographic.com.es/a/inventos-griegos-automatas-heron_9395" target="_blank">(click here)</a>, el elaboró un carrito de madera que podia desplazarse, cambiar de direccion y retroceder independientemente. El mecanismo de la maquina constaba de una pesa atada a un cilindro, la cual ejercia el impulso para el movimiento del vehiculo, y tales cuerdas estaban amarradas al eje de las rueda al otro extremo. Dicho eje tenia incrustados unos clavos que permitian a la cuerda enredarse en un patrón especifico. Este patrón era el responsable de la programación del carrito. Basicamente esa configuración de ataduras se podria considerar el primer lenguaje de programación de la historia. Galilleo dijo una vez que las matematicas son el lenguaje del del universo, su semantica trasciende toda entidad del cosmos, tal que incluso las maquinas pueden comprenderlas. Y precisamente la computación o la programación como es entendida hoy en dia, existe gracias a las contribuiciones de los matematicos, desde Ada Lovelace (considerada pionera de la programación) hasta Alan Turing con su teoria de la maquina, la cuál planteo como una respuesta al teorema de la incompletitud de Kurt Godel. ¿Intento decir que es necesario el estudio de las matematicas para aprender a programar? No, pero sí quiero que entiendas que las matematicas han sido importantes para la evolución de esta actividad y puedas darte cuenta de que la aritmetica y el algebra se encuentran en donde menos te lo esperas. En resumen, lenguaje formal de la programación es un lenguaje matematico por definición, y si todavia no me creen, solo investiguen acerca del metodo logico-simbolico y las matematicas discretas. No obstante, existen miles de lenguajes de programación, ¿Cuál deberias elegir? No puedo decidir por tí, pero enseñarte 4 alternativas con sus ventajas sí se encuentra dentro de mi alcance. Aquí se 
-                abordarán los siguientes lenguajes de programción: PHP, JavaScript, Python y Java. Disfruta de tu lectura en este interesante mundo de la informatica y la 
-                creatividad.</p>
+                <h2>Introducción</h2>
+
+<p>Bienvenid@ al blog sobre lenguajes de programación. ¿Sabías que la programación no es un invento moderno, sino que sus raíces se remontan a siglos antes de la tecnología electrónica? Filósofos griegos y primeros ingenieros, como Herón de Alejandría<a href="https://historia.nationalgeographic.com.es/a/inventos-griegos-automatas-heron_9395" target="_blank">(click aqui)</a>, ya crearon autómatas con mecanismos que podían seguir instrucciones específicas. Por ejemplo, Herón diseñó un carrito de madera que se movía y cambiaba de dirección gracias a un sistema de cuerdas y clavos que funcionaba como un lenguaje primitivo de programación.</p>
+
+<p>La programación, tal como la conocemos hoy, está profundamente ligada a las matemáticas y al pensamiento lógico. Desde Ada Lovelace, considerada la primera programadora, hasta Alan Turing, quien formuló la teoría de la máquina que lleva su nombre, las bases científicas de la computación han sido fundamentales para el desarrollo de esta disciplina.</p>
+
+<p>Aunque no es indispensable ser experto en matemáticas para aprender a programar, entender que los lenguajes formales de programación se basan en lógica matemática puede ayudarte a comprender mejor su funcionamiento. Existen miles de lenguajes de programación, cada uno con sus ventajas y usos.</p>
+
+<p>En este blog exploraremos cuatro lenguajes populares: <strong>PHP, JavaScript, Python y Java</strong>. Te mostraré sus características principales y para qué tipo de proyectos son ideales. Espero que disfrutes este viaje por el mundo de la informática y la creatividad.</p>
+
+
             </section>
             <section class="PHP" id="PHP">
                 <h2>PHP</h2>
-                <p>información</p>
+                <p>PHP (acrónimo recursivo de "PHP: Hypertext Preprocessor") es un lenguaje de programación del lado del servidor, especialmente diseñado para el desarrollo web. Fue creado por Rasmus Lerdorf en 1994 y se ha convertido en uno de los lenguajes más populares para construir sitios web dinámicos e interactivos.
+
+A diferencia de HTML, que solo estructura y presenta contenido estático, PHP permite interactuar con bases de datos, procesar formularios, gestionar sesiones y crear contenido dinámico. PHP es gratuito, de código abierto y está soportado por una gran comunidad de desarrolladores.</p>
+<p>
+    Declaracion de variables: 
+
+Se inicializa con $
+
+Ej: $musica="vallenato"
+    $nombre="juan"
+</p>
+<p>
+    <pre class="code-box">
+        <pre><code>
+
+&lt;?php
+// Definimos una variable con el nombre del usuario
+$nombre = "Laura";
+
+// Mostramos un saludo personalizado
+echo "¡Hola, " . $nombre . "! Bienvenida al mundo de PHP.";
+?&gt;
+</code></pre>
+    <code></code>
+    </pre>
+</p>
+
+<h3>Funciones de php</h3>
+<p>
+    1. Procesar lógica del lado del servidor
+
+    Ejecuta código en el servidor y envía el resultado al navegador en forma de HTML.
+
+    Por ejemplo: mostrar datos personalizados, manejar formularios o verificar inicios de sesión.
+</p>
+<p>
+    2.  Conectarse a bases de datos
+
+    PHP permite interactuar con bases de datos como MySQL, PostgreSQL o SQLite.
+
+    Puedes guardar, editar, buscar o eliminar datos fácilmente.
+    <pre class="code-box">
+        <pre><code>
+
+&lt;?php
+$conn = mysqli_connect("localhost", "usuario", "clave", "basedatos");
+?&gt;
+</code></pre>
+    <code></code>
+    </pre>
+</p>
+<p>
+    3. Generar contenido HTML dinámico
+
+    En lugar de páginas estáticas, puedes crear sitios que cambien dependiendo del usuario, la hora, el idioma, etc.
+    <pre class="code-box">
+        <pre><code>
+
+&lt;?php
+echo "<p>Bienvenido, $usuario</p>";
+
+?&gt;
+</code></pre>
+    <code></code>
+    </pre>
+</p>
+<p>
+    4. Gestionar usuarios y sesiones
+
+    PHP permite guardar datos del usuario entre páginas usando cookies o sesiones.
+    <pre class="code-box">
+        <pre><code>
+
+&lt;?php
+session_start();
+$_SESSION["nombre"] = "Carlos";
+
+?&gt;
+</code></pre>
+    <code></code>
+    </pre>
+
+</p>
+<p>
+    <p>5.  Procesar formularios</p>
+
+    <p>PHP recoge la información que el usuario escribe en formularios web y la procesa (como enviar un email, guardar datos, hacer cálculos, etc.).</p>
+
+
+<p>6.  Cargar archivos, imágenes o crear descargas</p>
+
+    <p>PHP permite subir archivos al servidor o forzar descargas desde el navegador.</p>
+
+ <p>resumen </p>
+
+    <p>La función de PHP es convertir una página web en una aplicación interactiva, dinámica y conectada a bases de datos, que responde en tiempo real a lo que hace el usuario.</p>
+</p>
             </section>
             <section class="JS" id="JS">
                 <h2>JavaScript</h2>
-                <p>informacion</p>
+                <p>
+                    <p>JavaScript es un lenguaje de programación esencial para la web moderna. Sin él, los sitios web serían simples</p>
+                    <p>documentos estáticos. Gracias a JavaScript, las páginas se vuelven interactivas, dinámicas y capaces de responder a las acciones del usuario en tiempo real.</p>
+                    <p>Aunque fue creado originalmente para ejecutarse en los navegadores, hoy también se usa fuera de ellos (por ejemplo, en servidores, aplicaciones móviles o incluso robots).</p>
+                    <h3>Breve historia de JavaScript</h3>
+                    <p>1995: JavaScript fue creado por Brendan Eich en tan solo 10 días, mientras trabajaba en Netscape.</p>
+                    <p>Inicialmente se llamó Mocha, luego LiveScript, y finalmente JavaScript (por motivos de marketing, aunque no está directamente relacionado con Java).</p>
+                    <p>En sus inicios fue criticado por ser limitado y poco seguro, pero con el tiempo evolucionó hasta convertirse en un lenguaje robusto y poderoso.</p>
+                    <h3>Sintaxis básica de JavaScript</h3>
+                    <p>
+                        <pre class="code-box">
+        <pre><code>
+
+// Declarar una variable
+let nombre = "Laura";
+
+// Función que saluda al usuario
+function saludar(nombre) {
+    return "Hola, " + nombre + "!";
+}
+
+// Mostrar resultado en consola
+console.log(saludar(nombre));
+
+</code></pre>
+    <code></code>
+    </pre>
+                    </p>
+                </p>
             </section>
             <section class="Python" id="Python">
                 <h2>Python</h2>
