@@ -4,7 +4,11 @@
         <title>Lenguajes de programacion</title>
         <meta charset="UTF-8">
         <link href="styles.css" rel="stylesheet">
-
+        <style>
+        pre, code {
+          text-align: left;
+        }
+        </style>
     </head>
     <body>
         <header>
@@ -13,13 +17,15 @@
         <main>
             <section class="Index" id="Index">
                 <h2>Indice</h2>
-                <ul>
+                <nav>
+                  <ul>
                     <li><a href="#Intro">Introducción</a></li>
                     <li><a href="#PHP">PHP</a></li>
                     <li><a href="#JS">JavaScript</a></li>
                     <li><a href="#Python">Python</a></li>
                     <li><a href="#Java">Java</a></li>
-                </ul>
+                  </ul>
+                </nav>
             </section>
             <section class="Intro" id="Intro">
                 <h2>Introducción</h2>
@@ -167,16 +173,115 @@ console.log(saludar(nombre));
                 </p>
             </section>
             <section class="Python" id="Python">
-                <h2>Python</h2>
-                <p>información</p>
+                <h1>Python</h1>
+                <p>Python es un lenguaje de programación interpretado, de alto nivel, con una sintaxis limpia que se asemeja al inglés. Fue diseñado para ser fácil de leer y escribir, lo que lo convierte en una excelente opción para principiantes. Es multiplataforma y ampliamente utilizado en áreas modernas de desarrollo.</p>
+                <br>
+                <h3>Datos curiosos sobre python:</h3>
+                <br>
+                <p>1-El nombre "Python" no viene de la serpiente, sino del grupo de comedia británico Monty Python’s Flying Circus.</p>
+                <p>2-Uno de los principios fundamentales de Python es “There should be one—and preferably only one—obvious way to do it”. Esto promueve una forma clara y directa de programar.</p>
+                <P>3-Python fue adoptado tempranamente por Google como uno de sus lenguajes clave. Incluso su creador, Guido van Rossum, trabajó allí por varios años.</P>
+                <br>
+                <h3>Casos de uso con PYTHON:</h3>
+                <br>
+                <p>
+                   CASO: Un trabajador de oficina usa Python para renombrar automáticamente cientos de archivos.<br>
+                   COMO LO HACE: Escribe un codigo que recorre carpetas y cambia nombres según una regla.<br>
+                   BENEFICIO: Ahorra tiempo y reduce errores humanos. 
+                </p>
+                <br>
+                 <p>
+                   CASO: Quieres que tu computadora te avise a cierta hora algo, por ejemplo, para recordar tomar un descanso o asistir a una clase.<br>
+                   COMO LO HACE: Con unas pocas líneas de código, puedes crear una alarma que espera hasta la hora indicada y luego emite un sonido o muestra un mensaje.<br>
+                   BENEFICIO: Aprendes a trabajar con fechas y horas, bucles while y funciones de tiempo (time.sleep()), mientras haces algo útil para ti.. 
+                </p>
+                <h2>Ejemplo de codigo para alarma:</h2>
+                <br>
+<pre><code>
+import time
+
+hora_objetivo = "15:30"
+
+while True:
+   hora_actual = time.strftime("%H:%M")
+   if hora_actual == hora_objetivo:
+       print("⏰ ¡Es hora de tu descanso!")
+       break
+   time.sleep(30)
+</code></pre>
             </section>
             <section class="Java" id="Java">
-                <h2>Java</h2>
-                <p>información</p>
+                <h1>Java</h1>
+                <p>Java es un lenguaje de programación orientado a objetos, compilado a bytecode y ejecutado en la Java Virtual Machine (JVM), lo que lo hace extremadamente portátil. Es más estructurado y requiere más código para tareas simples, pero ofrece robustez y escalabilidad.</p>
+                <br>
+                <h3>Datos curiosos sobre JAVA:</h3>
+                <br>
+                <p>1-Más viejo, pero muy vigente. Java fue lanzado en 1995 y sigue siendo uno de los lenguajes más usados en grandes empresas y sistemas críticos.</p>
+                <p>2-Java y Minecraft. La primera versión de Minecraft, uno de los videojuegos más vendidos de la historia, fue escrita completamente en Java.</p>
+                <P>3-Java se llamó originalmente Oak, pero tuvieron que cambiarlo porque ese nombre ya estaba registrado. Eligieron “Java” por el café de la isla de Java.</P>
+                <br>
+                <h3>Casos de uso con JAVA:</h3>
+                <br>
+                <p>
+                   CASO: Una persona crea una app móvil de recetas de cocina.<br>
+                   COMO LO HACE: Usa Java en Android Studio para programar la lógica de la app, como mostrar recetas, guardar favoritas, etc.<br>
+                   POR QUE JAVA: Android fue diseñado para funcionar principalmente con Java, lo que lo hace ideal para estas apps. 
+                </p>
+                <br>
+                <p>
+                   CASO: Un banco desarrolla su sistema interno de transferencias y gestión de cuentas.<br>
+                   COMO LO HACE: Utiliza Java por su seguridad, rendimiento y estabilidad.<br>
+                   POR QUE JAVA: Es muy confiable en entornos que manejan datos sensibles y deben estar activos 24/7. 
+                </p>
+                <h2>Ejemplo de codigo basico en java:</h2>
+                <br>
+<pre><code>
+public class Saludo {
+    public static void main(String[] args) {
+        System.out.println("¡Hola, mundo!");
+    }
+}
+</code></pre>
+            </section>
+                <h2>Cuadro comparativo (PYTHON vs JAVA)</h2>
+                <table border="2">
+                  <tr>
+                    <th>Caracteristica</th>
+                    <th>Python</th>
+                    <th>Java</th>
+                  </tr>
+                  <tr>
+                    <td>Sintaxis</td>
+                    <td>Simple y legible, ideal para escribir rápido</td>
+                    <td>Más estricta y detallada, favorece la estructura</td>
+                  </tr>
+                  <tr>
+                    <td>Velocidad de ejecución</td>
+                    <td>Más lento por ser interpretado</td>
+                    <td>Más rápido por ser compilado a bytecode</td>
+                  </tr>
+                  <tr>
+                    <td>Curva de aprendizaje</td>
+                    <td>Suave y accesible para novatos</td>
+                    <td>Requiere más tiempo, pero forma bases sólidas</td>
+                  </tr>
+                  <tr>
+                    <td>Portabilidad</td>
+                    <td>Alta (corre en múltiples sistemas con pocos cambios)</td>
+                    <td>Muy alta (gracias a la JVM "Java Virtual Machine")</td>
+                  </tr>
+                  <tr>
+                    <td>Uso movi</td>
+                    <td>Limitado: no es común en desarrollo móvil nativo</td>
+                    <td>Alto: ampliamente usado en Android</td>
+                  </tr>
+                </table>
+            <section>
+
             </section>
         </main>
         <footer>
-            <p>GITHUB: <a href="#" rel="_blank">Eleira Aristizabal</a>, <a href="#" rel="_blank">Samuel Lopez</a>, <a href="https://github.com/Grendizer-z" rel="_blank">Carlos Ospino</a></p>
+            <p>GITHUB: <a href="https://github.com/alejandraristizabal" rel="_blank">Eleira Aristizabal</a>, <a href="https://github.com/Samuel-190" rel="_blank">Samuel Lopez</a>, <a href="https://github.com/Grendizer-z" rel="_blank">Carlos Ospino</a></p>
         </footer>
     </body>
 </html>
